@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <title>Sticky Notes Demo</title>
+    <link rel="stylesheet" href="styles/sticky.css"/>
+</head>
+<body>
+    <div id="new_sticky_buttonwrap">
+        <img src="images/add_button.png"/>
+        <span>Add New Sticky</span>
+    </div>
+    <div id="sticky_priorities">
+        <div id="high_priority">
+            <div class="high_color"></div>
+            <div id="high_text">High Priority</div>
+        </div>
+        <div id="medium_priority">
+            <div class="medium_color"></div>
+            <div id="medium_text">Medium Priority</div>
+        </div>
+        <div id="low_priority">
+            <div class="low_color"></div>
+            <div id="low_text">Low Priority</div>
+        </div>
+    </div>
+    <button id="save_button" class="animated_button">Save All Data!</button>
+    <button id="reload_button" class="animated_button">Get Saved Data!</button>
+    <div id="sticky_container" ondrop="drop(event)" ondragover="drag_over(event)"></div>
+    <script src="scripts/vendors/jquery_1.9.1.js"></script>
+    <script src="scripts/sticky.js"></script>
+    <script src="scripts/sticky_drag.js"></script>
+</body>
+</html>
